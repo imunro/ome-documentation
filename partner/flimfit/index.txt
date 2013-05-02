@@ -1,0 +1,22 @@
+#############################################
+OMERO Partner projects.
+#############################################
+
+
+A major goal of the OME project ....i
+
+********
+FLIMfit
+********
+
+.. only:: html
+
+    FLIMfit
+
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+
+    example
+    
+

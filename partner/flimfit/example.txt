@@ -1,0 +1,38 @@
+FLIMfit software: brief list of main GUI features
+=================================================
+
+Abbreviations
+-------------
+
+FLIM		Fluorescence Lifetime Imaging Microscopy
+TCSPC		Time Correlated Single Photon Counting
+IRF 		Instrument Response Function
+TVB		Time Varying Background
+FOV 		Field of View (synonymous to “image”) 
+FRET 		Forster Resonance Energy Transfer
+
+
+IRF
+---
+
+
+The concept of the instrument response function (IRF) is central to the correct analysis of FLIM measurements. The IRF describes the spread of photon arrival times due to purely instrumental effects. The IRF can sometimes be measured directly in the imaging system used. In some cases, it is instead convenient to measure a fluorophore with a mono-exponential decay, which is referred to as a reference IRF gR(t) to obtain information about the IRF. The Reference IRF is typically a high-quality experimental acquisition of a mono-exponential fluorescence decay with known fluorescence lifetimeτR obtained from a suitable sample in the spectral window of interest.
+The IRF can be pre-processed by baseline-subtraction and it is then normalized to have unit area in order to represent the instruments’ photon arrival time probability density.
+When using a reference decay that sufficiently short that it can be considered to be practically instantaneous (τR =0), the reference IRF becomes an impulse response function, or delta-function IRF gδ(t).
+Artefacts present in FLIM data such as non-delayed (scattered, “fast”) light and the background intensity, will be mentioned further on. 
+
+
+
+Fitting Expresssions
+-------------------------------
+
+Consider the fluorescence decay caused by the arrival of fast laser pulses at times t = −nT (n=0,1,2,… ∞), and recorded in the time window [0,T], where T is the pulse repetition period. One could derive the following model expression to fit the measured decay intensity to the Nexp exponential components, basing on the delta-function IRF gδ(t):
+
+Since Pythagoras, we know that :math:`a^2 + b^2 = c^2`.
+
+
+.. math::
+
+   (a + b)^2 = a^2 + 2ab + b^2
+
+   (a - b)^2 = a^2 - 2ab + b^2
