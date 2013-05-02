@@ -3,7 +3,7 @@ OMERO Partner projects.
 #############################################
 
 
-A major goal of the OME project ....i
+Omero Partner projects.
 
 ********
 FLIMfit
