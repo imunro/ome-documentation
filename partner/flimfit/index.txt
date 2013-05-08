@@ -18,5 +18,6 @@ FLIMfit
     :titlesonly:
 
     example
+    fileFormats
     
 
